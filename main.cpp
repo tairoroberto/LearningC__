@@ -6,6 +6,8 @@ void showSumOfTwoVariables();
 
 void showInputAndOutput();
 
+void showValueOfVariableWithTypeModify();
+
 using namespace std;
 
 int main() {
@@ -21,7 +23,28 @@ int main() {
     /* show input and output data in console */
     showInputAndOutput();
 
+    /* work with type modify */
+    showValueOfVariableWithTypeModify();
+
+
     return 0;
+}
+
+void showValueOfVariableWithTypeModify() {
+    long int a = 0;
+    int b = 0;
+    signed c = 0;
+    unsigned d = 0;
+    char e = 'a';
+    short int f = 0;
+
+    cout << sizeof(a) << endl;
+    cout << sizeof(b) << endl;
+    cout << sizeof(c) << endl;
+    cout << sizeof(d) << endl;
+    cout << sizeof(e) << endl;
+    cout << sizeof(f) << endl;
+
 }
 
 void showInputAndOutput() {
@@ -29,7 +52,7 @@ void showInputAndOutput() {
     cout << "Learning input and output in c++ " << endl;
 
     cout << "normal: " << 10 + 50 << endl;
-    cout << "hexadecimal: " << hex << 10 + 50 << endl;
+    //cout << "hexadecimal: " << hex << 10 + 50 << endl;
 
     int num = 0;
     int num2 = 0;
